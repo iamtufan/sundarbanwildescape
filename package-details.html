@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expedition Details | Sundarban Wild Escape</title>
+  <meta name="description" content="Explore verified luxury ecotourism itineraries in the Indian Sundarbans. Detailed day-by-day safari schedules, authentic local meals, vessel architecture, and direct reservations.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="apple-touch-icon" href="assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Great+Vibes&family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            forest: '#123B2A',
+            midnight: '#0A211B',
+            foliage: '#426B50',
+            ivory: '#F7F3E9',
+            mist: '#DCE6DF',
+            gold: '#C8A66B',
+            charcoal: '#202722',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            cormorant: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            script: ['"Great Vibes"', 'cursive'],
+            sans: ['Manrope', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Lightbox Modal Transitions */
+    #packageLightboxModal {
+      transition: opacity 0.3s ease-in-out;
+    }
+    #packageLightboxModal.active {
+      opacity: 1;
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+    }
+    .faq-item.active .faq-answer {
+      max-height: 400px;
+      padding-top: 0.75rem;
+      padding-bottom: 1rem;
+    }
+    .faq-item.active .faq-icon {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body class="bg-[#F7F3E9] text-[#202722] font-sans antialiased selection:bg-[#C8A66B] selection:text-[#0A211B]">
+
+  <!-- Global Header -->
+  <header id="mainHeader" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-5 bg-transparent">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 group focus:outline-none">
+        <img 
+          src="assets/images/logo.png" 
+          alt="Sundarban Wild Escape Logo" 
+          class="w-12 h-12 md:w-14 md:h-14 rounded-full object-cover border border-[#C8A66B]/50 shadow-md transition-transform group-hover:scale-105"
+        />
+        <div class="flex flex-col">
+          <span class="font-serif text-lg sm:text-xl md:text-2xl font-bold tracking-wider text-white group-hover:text-[#C8A66B] transition-colors leading-tight">
+            SUNDARBAN WILD ESCAPE
+          </span>
+          <span class="text-[9px] sm:text-[10px] text-[#DCE6DF]/80 tracking-[0.2em] uppercase font-light">
+            Where the River Meets the Wild
+          </span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium text-white/90">
+        <a href="index.html" class="hover:text-[#C8A66B] transition-colors">Home</a>
+        <a href="about.html" class="hover:text-[#C8A66B] transition-colors">About</a>
+        <a href="packages.html" class="text-[#C8A66B] font-semibold border-b border-[#C8A66B] pb-1">Packages</a>
+        <a href="blog.html" class="hover:text-[#C8A66B] transition-colors">Blog</a>
+        <a href="contact.html" class="hover:text-[#C8A66B] transition-colors">Contact</a>
+      </nav>
+
+      <div class="hidden md:flex items-center space-x-5">
+        <a href="tel:+919564846891" class="text-white text-xs font-semibold flex items-center gap-2 hover:text-[#C8A66B] transition-colors">
+          <svg class="w-4 h-4 text-[#C8A66B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+          </svg>
+          <span>+91 9564846891</span>
+        </a>
+        <a href="contact.html" class="btn-gold text-xs py-2.5 px-5 rounded-full uppercase tracking-wider font-bold">
+          Book Expedition
+        </a>
+      </div>
+
+      <button id="mobileMenuBtn" class="lg:hidden text-white p-2 focus:outline-none" aria-label="Toggle Navigation Drawer" aria-expanded="false">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop & Drawer -->
+  <div id="mobileNavBackdrop" class="fixed inset-0 bg-black/60 z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+  <aside id="mobileNavDrawer" class="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-[#0A211B] z-50 transform translate-x-full transition-transform duration-300 flex flex-col justify-between p-8 border-l border-[#DCE6DF]/20 shadow-2xl">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-[#DCE6DF]/20 mb-8">
+        <div class="flex items-center gap-3">
+          <img src="assets/images/logo.png" alt="Sundarban Wild Escape Logo" class="w-11 h-11 rounded-full object-cover border border-[#C8A66B]/60 shadow-sm" />
+          <div>
+            <span class="font-serif text-base font-bold text-white block leading-tight">Sundarban Wild Escape</span>
+            <span class="text-[9px] text-[#C8A66B] uppercase tracking-widest">Curated Tour Catalog</span>
+          </div>
+        </div>
+        <button id="mobileCloseBtn" class="text-white/80 hover:text-white p-1 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+      <nav class="flex flex-col space-y-4 text-base font-medium text-white/90">
+        <a href="index.html" class="hover:text-[#C8A66B] py-2 border-b border-white/5 transition-colors">Home</a>
+        <a href="about.html" class="hover:text-[#C8A66B] py-2 border-b border-white/5 transition-colors">About</a>
+        <a href="packages.html" class="text-[#C8A66B] py-2 border-b border-white/5 font-semibold">Packages</a>
+        <a href="blog.html" class="hover:text-[#C8A66B] py-2 border-b border-white/5 transition-colors">Blog</a>
+        <a href="contact.html" class="hover:text-[#C8A66B] py-2 border-b border-white/5 transition-colors">Contact</a>
+      </nav>
+    </div>
+    <div class="pt-6 border-t border-[#DCE6DF]/20">
+      <a href="tel:+919564846891" class="text-white text-base font-bold font-serif hover:text-[#C8A66B] transition-colors block mb-3">+91 9564846891</a>
+      <a href="https://wa.me/919564846891" target="_blank" rel="noopener noreferrer" class="btn-gold w-full py-3 px-4 rounded-lg text-xs font-bold uppercase tracking-wider text-center block">
+        Direct WhatsApp Chat
+      </a>
+    </div>
+  </aside>
+
+  <!-- 1. DYNAMIC HERO CONTAINER (Populated by js/package-details.js) -->
+  <div id="packageHero"></div>
+
+  <!-- 2. STICKY SUB-NAVIGATION BAR (Active scroll spy) -->
+  <div id="packageSubNavContainer" class="sticky top-20 z-30 bg-[#0A211B]/95 backdrop-blur-md border-y border-[#DCE6DF]/20 py-3 hidden md:block">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
+      <nav class="flex items-center space-x-6 text-xs uppercase tracking-wider overflow-x-auto no-scrollbar">
+        <a href="#section-gallery" class="text-[#C8A66B] font-bold transition-colors">Gallery</a>
+        <a href="#section-itinerary" class="text-[#DCE6DF]/80 hover:text-[#C8A66B] transition-colors">Day-by-Day Safari</a>
+        <a href="#section-culinary" class="text-[#DCE6DF]/80 hover:text-[#C8A66B] transition-colors">Bengali Cuisine</a>
+        <a href="#section-vessel" class="text-[#DCE6DF]/80 hover:text-[#C8A66B] transition-colors">Safari Boat</a>
+        <a href="#section-lodging" class="text-[#DCE6DF]/80 hover:text-[#C8A66B] transition-colors">Eco-Resort</a>
+        <a href="#section-inclusions" class="text-[#DCE6DF]/80 hover:text-[#C8A66B] transition-colors">Inclusions</a>
+        <a href="#section-reviews" class="text-[#DCE6DF]/80 hover:text-[#C8A66B] transition-colors">Reviews</a>
+        <a href="#section-faqs" class="text-[#DCE6DF]/80 hover:text-[#C8A66B] transition-colors">FAQs</a>
+      </nav>
+      <a href="tel:+919564846891" class="text-white text-xs font-bold font-mono flex items-center gap-1.5 hover:text-[#C8A66B] shrink-0">
+        <svg class="w-3.5 h-3.5 text-[#C8A66B]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+        <span>+91 9564846891</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- 3. MAIN EXPEDITION DETAILS LAYOUT -->
+  <main class="py-12 md:py-16 px-6 lg:px-12 bg-[#F7F3E9] min-h-screen">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
+      
+      <!-- Left Column: Rich Itineraries, Vessel Architecture, Food Menus, Watchtowers -->
+      <div class="lg:col-span-8">
+        <div id="packageMainContent" class="space-y-16">
+          <!-- Dynamically populated by js/package-details.js -->
+        </div>
+      </div>
+
+      <!-- Right Column: Sticky Live Configurator & WhatsApp Booking -->
+      <aside class="lg:col-span-4">
+        <div id="stickyBookingCard">
+          <!-- Dynamically populated by js/package-details.js -->
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- 4. ACCESSIBLE CLICK-TO-ZOOM LIGHTBOX MODAL -->
+  <div id="packageLightboxModal" class="fixed inset-0 z-50 bg-black/95 hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4">
+    <button id="packageLightboxClose" class="absolute top-6 right-6 text-white/80 hover:text-white p-2.5 rounded-full bg-white/10 hover:bg-white/20 transition-all z-20 focus:outline-none" aria-label="Close Lightbox">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+    </button>
+    
+    <button id="packageLightboxPrev" class="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-white/80 hover:text-white p-3 rounded-full bg-white/10 hover:bg-white/20 transition-all z-20 focus:outline-none" aria-label="Previous Photo">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+    </button>
+
+    <button id="packageLightboxNext" class="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-white/80 hover:text-white p-3 rounded-full bg-white/10 hover:bg-white/20 transition-all z-20 focus:outline-none" aria-label="Next Photo">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+    </button>
+
+    <div class="max-w-5xl w-full flex flex-col items-center">
+      <div class="relative max-h-[75vh] w-full flex items-center justify-center overflow-hidden rounded-2xl mb-4">
+        <img id="packageLightboxImg" src="" alt="Sundarban Expedition Photography" class="max-h-[75vh] max-w-full object-contain shadow-2xl rounded-lg">
+      </div>
+      <div class="text-center text-white px-4">
+        <div class="flex items-center justify-center gap-3 mb-1">
+          <h3 id="packageLightboxTitle" class="font-serif text-lg font-bold"></h3>
+          <span id="packageLightboxCounter" class="text-xs text-[#C8A66B] font-mono"></span>
+        </div>
+        <p id="packageLightboxCaption" class="text-xs text-[#DCE6DF]/80 max-w-2xl mx-auto font-light"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Footer (Exact match with reference image content & layout) -->
+  <footer class="bg-[#0A211B] text-white pt-16 pb-20 md:pb-12 border-t border-[#DCE6DF]/15">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-[#DCE6DF]/15">
+        
+        <!-- Brand Ribbon Column -->
+        <div class="lg:col-span-1">
+          <!-- Hanging Cream Ribbon Badge as seen in reference -->
+          <div class="inline-block bg-[#F7F3E9] p-3 rounded-b-2xl shadow-xl border-x-2 border-b-2 border-[#C8A66B]/50 mb-5">
+            <img src="assets/images/logo.png" alt="Sundarban Wild Escape Logo" class="w-16 h-16 rounded-full object-cover border border-[#0A211B]/20 shadow-sm" />
+          </div>
+          <p class="text-xs text-[#DCE6DF]/80 leading-relaxed mb-6 font-light">
+            <strong class="text-white font-medium">Sundarban Wild Escape</strong> is dedicated to offering safe, comfortable, and memorable journeys into the heart of the Sundarbans. From eco-friendly accommodations to guided wildlife safaris, we ensure every moment of your trip is enriching.
+          </p>
+          <div class="flex items-center space-x-3 text-white">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-[#123B2A] border border-[#DCE6DF]/20 flex items-center justify-center hover:bg-[#C8A66B] hover:text-[#0A211B] transition-colors" aria-label="Facebook">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-[#123B2A] border border-[#DCE6DF]/20 flex items-center justify-center hover:bg-[#C8A66B] hover:text-[#0A211B] transition-colors" aria-label="Twitter">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-[#123B2A] border border-[#DCE6DF]/20 flex items-center justify-center hover:bg-[#C8A66B] hover:text-[#0A211B] transition-colors" aria-label="YouTube">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 1: Navigation -->
+        <div>
+          <h4 class="text-sm font-bold text-white mb-4 tracking-wide">Navigation</h4>
+          <ul class="space-y-2.5 text-xs text-[#DCE6DF]/80 font-light">
+            <li><a href="index.html" class="hover:text-[#C8A66B] transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-[#C8A66B] transition-colors">About Us</a></li>
+            <li><a href="packages.html" class="hover:text-[#C8A66B] text-[#C8A66B] font-semibold transition-colors">Tour Packages</a></li>
+            <li><a href="gallery.html" class="hover:text-[#C8A66B] transition-colors">Gallery</a></li>
+            <li><a href="contact.html" class="hover:text-[#C8A66B] transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Tour Packages -->
+        <div>
+          <h4 class="text-sm font-bold text-white mb-4 tracking-wide">Tour Packages</h4>
+          <ul class="space-y-2.5 text-xs text-[#DCE6DF]/80 font-light">
+            <li><a href="package-details.html?id=day-explorer" class="hover:text-[#C8A66B] transition-colors">Sundarban 1Day</a></li>
+            <li><a href="package-details.html?id=mangrove-classic-2d1n" class="hover:text-[#C8A66B] transition-colors">Sundarban 1 Night 2 Days</a></li>
+            <li><a href="package-details.html?id=wilderness-signature-3d2n" class="hover:text-[#C8A66B] transition-colors">Sundarban 2 Nights 3 Days</a></li>
+            <li><a href="privacy.html" class="hover:text-[#C8A66B] transition-colors">Privacy Policy</a></li>
+            <li><a href="terms.html" class="hover:text-[#C8A66B] transition-colors">Terms and Conditions</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Us -->
+        <div>
+          <h4 class="text-sm font-bold text-white mb-4 tracking-wide">Contact us</h4>
+          <ul class="space-y-3 text-xs text-[#DCE6DF]/80 font-light">
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-[#C8A66B] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <span>24 X 7</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-[#C8A66B] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              <span>Sundarban Pakhiralay, West Bengal, Gosaba - 743370</span>
+            </li>
+            <li class="pt-1 text-[#DCE6DF]/70">
+              Call any time; we are happy to help you
+            </li>
+            <li class="pt-2">
+              <a href="tel:+919564846891" class="inline-flex items-center gap-2 bg-[#D4F379] hover:bg-[#c2e460] text-[#0A211B] font-bold px-6 py-2.5 rounded-full text-xs shadow-md transition-all hover:scale-105">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 0 0-1.02.24l-2.2 2.2a15.045 15.045 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1zM19 12h2a9 9 0 0 0-9-9v2c3.87 0 7 3.13 7 7zm-4 0h2c0-2.76-2.24-5-5-5v2c1.66 0 3 1.34 3 3z"/></svg>
+                <span>Call Us</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-[11px] text-[#DCE6DF]/60 gap-4 text-center md:text-left">
+        <div>&copy; <span class="current-year">2026</span> Sundarban Wild Escape. All rights reserved. Indian Sundarbans only.</div>
+        <div class="flex items-center space-x-6">
+          <a href="terms.html" class="hover:text-white transition-colors">Terms of Ecotourism</a>
+          <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="contact.html" class="hover:text-white transition-colors">Godkhali Route Map</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Desktop WhatsApp Float Button -->
+  <a id="whatsappFloat" href="https://wa.me/919564846891?text=Hello%20Sundarban%20Wild%20Escape%2C%20I%20would%20like%20to%20inquire%20about%20your%20packages." target="_blank" rel="noopener noreferrer" class="hidden md:flex fixed bottom-6 right-6 z-40 bg-[#25D366] text-white p-3.5 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 items-center justify-center whatsapp-pulse" title="Chat on WhatsApp" aria-label="Direct WhatsApp Contact">
+    <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <!-- Mobile Fixed Quick Action Bar (Bottom docked) -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#0A211B] border-t border-[#DCE6DF]/20 px-4 py-3 flex items-center justify-between shadow-2xl">
+    <div>
+      <span class="text-[10px] uppercase text-[#DCE6DF]/70 block font-medium">Starting From</span>
+      <span id="mobileBarPrice" class="font-serif text-lg font-bold text-white">₹0</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <a href="tel:+919564846891" class="p-2.5 rounded-full border border-white/20 text-[#D4F379] hover:bg-white/10 transition-colors" aria-label="Call Reservations">
+        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 0 0-1.02.24l-2.2 2.2a15.045 15.045 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1zM19 12h2a9 9 0 0 0-9-9v2c3.87 0 7 3.13 7 7zm-4 0h2c0-2.76-2.24-5-5-5v2c1.66 0 3 1.34 3 3z"/></svg>
+      </a>
+      <a href="https://wa.me/919564846891" target="_blank" rel="noopener noreferrer" class="btn-gold py-2.5 px-5 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-md">
+        <span>Book Now</span>
+        <span>&rarr;</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Modular Scripts -->
+  <script src="js/main.js"></script>
+  <script type="module" src="js/package-details.js"></script>
+</body>
+</html>

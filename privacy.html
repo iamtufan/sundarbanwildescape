@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Sundarban Wild Escape</title>
+  <meta name="description" content="Privacy Policy and Forest Department data protection standards for Sundarban Wild Escape guests and website visitors.">
+  
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="apple-touch-icon" href="assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            forest: '#123B2A',
+            midnight: '#0A211B',
+            foliage: '#426B50',
+            ivory: '#F7F3E9',
+            mist: '#DCE6DF',
+            gold: '#C8A66B',
+            charcoal: '#202722',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            cormorant: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['Manrope', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-[#F7F3E9] text-[#202722] font-sans antialiased selection:bg-[#C8A66B] selection:text-[#0A211B]">
+
+  <!-- Global Header -->
+  <header id="mainHeader" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-5 bg-transparent">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 group focus:outline-none">
+        <img 
+          src="assets/images/logo.png" 
+          alt="Sundarban Wild Escape Logo" 
+          class="w-12 h-12 md:w-14 md:h-14 rounded-full object-cover border border-[#C8A66B]/50 shadow-md transition-transform group-hover:scale-105"
+        />
+        <div class="flex flex-col">
+          <span class="font-serif text-lg sm:text-xl md:text-2xl font-bold tracking-wider text-white group-hover:text-[#C8A66B] transition-colors leading-tight">
+            SUNDARBAN WILD ESCAPE
+          </span>
+          <span class="text-[9px] sm:text-[10px] text-[#DCE6DF]/80 tracking-[0.2em] uppercase font-light">
+            Where the River Meets the Wild
+          </span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium text-white/90">
+        <a href="index.html" class="hover:text-[#C8A66B] transition-colors">Home</a>
+        <a href="about.html" class="hover:text-[#C8A66B] transition-colors">About</a>
+        <a href="packages.html" class="hover:text-[#C8A66B] transition-colors">Packages</a>
+        <a href="blog.html" class="hover:text-[#C8A66B] transition-colors">Blog</a>
+        <a href="contact.html" class="hover:text-[#C8A66B] transition-colors">Contact</a>
+      </nav>
+
+      <div class="hidden md:flex items-center space-x-5">
+        <a href="tel:+919564846891" class="text-white text-xs font-semibold flex items-center gap-2 hover:text-[#C8A66B] transition-colors">
+          <svg class="w-4 h-4 text-[#C8A66B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+          </svg>
+          <span>+91 9564846891</span>
+        </a>
+        <a href="contact.html" class="btn-gold text-xs py-2.5 px-5 rounded-full uppercase tracking-wider font-bold">
+          Book Expedition
+        </a>
+      </div>
+
+      <button id="mobileMenuBtn" class="lg:hidden text-white p-2 focus:outline-none" aria-label="Toggle Navigation Drawer" aria-expanded="false">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop & Drawer -->
+  <div id="mobileNavBackdrop" class="fixed inset-0 bg-black/60 z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+  <aside id="mobileNavDrawer" class="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-[#0A211B] z-50 transform translate-x-full transition-transform duration-300 flex flex-col justify-between p-8 border-l border-[#DCE6DF]/20 shadow-2xl">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-[#DCE6DF]/20 mb-8">
+        <div class="flex items-center gap-3">
+          <img src="assets/images/logo.png" alt="Sundarban Wild Escape Logo" class="w-11 h-11 rounded-full object-cover border border-[#C8A66B]/60 shadow-sm" />
+          <div>
+            <span class="font-serif text-base font-bold text-white block leading-tight">Sundarban Wild Escape</span>
+            <span class="text-[10px] text-[#C8A66B] uppercase tracking-widest">Privacy Policy</span>
+          </div>
+        </div>
+        <button id="mobileCloseBtn" class="text-white/80 hover:text-white p-1 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+      <nav class="flex flex-col space-y-4 text-base font-medium text-white/90">
+        <a href="index.html" class="hover:text-[#C8A66B] py-2 border-b border-white/5 transition-colors">Home</a>
+        <a href="about.html" class="hover:text-[#C8A66B] py-2 border-b border-white/5 transition-colors">About</a>
+        <a href="packages.html" class="hover:text-[#C8A66B] py-2 border-b border-white/5 transition-colors">Packages</a>
+        <a href="blog.html" class="hover:text-[#C8A66B] py-2 border-b border-white/5 transition-colors">Blog</a>
+        <a href="contact.html" class="hover:text-[#C8A66B] py-2 border-b border-white/5 transition-colors">Contact</a>
+      </nav>
+    </div>
+    <div class="pt-6 border-t border-[#DCE6DF]/20">
+      <a href="tel:+919564846891" class="text-white text-base font-bold font-serif hover:text-[#C8A66B] transition-colors block mb-3">+91 9564846891</a>
+    </div>
+  </aside>
+
+  <!-- Hero Header -->
+  <section class="relative min-h-[40vh] flex items-center justify-center bg-cover bg-center pt-32 pb-16 px-6 lg:px-12" style="background-image: linear-gradient(180deg, rgba(10,33,27,0.6) 0%, rgba(10,33,27,0.95) 100%), url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=2000&q=85');">
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <span class="text-xs uppercase tracking-[0.25em] text-[#C8A66B] font-bold block mb-2">Guest Data Protection</span>
+      <h1 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-4">
+        Privacy Policy & Forest Permit Security
+      </h1>
+      <p class="text-xs sm:text-sm text-[#DCE6DF]/90 font-light max-w-2xl mx-auto">
+        Committed to the highest standards of data integrity in compliance with Indian digital privacy benchmarks and Forest Department statutory mandates.
+      </p>
+    </div>
+  </section>
+
+  <!-- Privacy Content -->
+  <main class="py-16 px-6 lg:px-12 bg-white">
+    <div class="max-w-4xl mx-auto space-y-8 text-xs sm:text-sm text-[#202722]/85 leading-relaxed">
+      
+      <section class="border-b border-[#DCE6DF] pb-6">
+        <h2 class="font-serif text-xl sm:text-2xl font-bold text-[#0A211B] mb-3">1. Information We Collect</h2>
+        <p class="mb-3">
+          To plan and execute authorized ecotourism journeys into the Sundarban Tiger Reserve (STR), we collect personal contact details (name, email address, phone/WhatsApp number) and statutory identification details (Aadhaar, Voter ID, or Passport information).
+        </p>
+      </section>
+
+      <section class="border-b border-[#DCE6DF] pb-6">
+        <h2 class="font-serif text-xl sm:text-2xl font-bold text-[#0A211B] mb-3">2. Forest Department Statutory Disclosure</h2>
+        <p class="mb-3">
+          Under West Bengal Forest Department rules, entry manifests containing each guest's name, age, nationality, and government ID number must be registered with the Range Officer at Sajnekhali / Canning prior to river transit. We submit your documentation strictly to authorized forest officials for lawful permit issuance.
+        </p>
+      </section>
+
+      <section class="border-b border-[#DCE6DF] pb-6">
+        <h2 class="font-serif text-xl sm:text-2xl font-bold text-[#0A211B] mb-3">3. Zero Data Commercialization</h2>
+        <p class="mb-3">
+          We never sell, rent, lease, or distribute your email address, telephone number, or travel preferences to third-party marketing brokers or advertisers. All reservation communications are handled directly between you and our core operations team.
+        </p>
+      </section>
+
+      <section class="border-b border-[#DCE6DF] pb-6">
+        <h2 class="font-serif text-xl sm:text-2xl font-bold text-[#0A211B] mb-3">4. WhatsApp Communications</h2>
+        <p class="mb-3">
+          When you click our WhatsApp booking buttons or submit our inquiry form, you initiate a direct encrypted chat with our verified concierge number (+91 9564846891). WhatsApp’s end-to-end encryption protocols govern the transit of your text messages.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="font-serif text-xl sm:text-2xl font-bold text-[#0A211B] mb-3">5. Data Inquiries & Contact</h2>
+        <p class="mb-2">
+          If you have questions regarding our data practices or wish to request the deletion of non-statutory records following your expedition, please reach out directly:
+        </p>
+        <p><strong>Sundarban Wild Escape — Privacy Officer</strong></p>
+        <p>Phone / WhatsApp: <a href="tel:+919564846891" class="text-[#123B2A] font-bold underline">+91 9564846891</a></p>
+        <p>Operating Base: Godkhali Ghat, Canning, South 24 Parganas, West Bengal 743370</p>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="bg-[#0A211B] text-white pt-20 pb-12 border-t border-[#DCE6DF]/15">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-16 border-b border-[#DCE6DF]/15">
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-3">
+            <img src="assets/images/logo.png" alt="Sundarban Wild Escape Logo" class="w-12 h-12 rounded-full object-cover border border-[#C8A66B]/50 shadow-md" />
+            <div>
+              <span class="font-serif text-xl sm:text-2xl font-bold tracking-wider text-white block leading-tight">SUNDARBAN WILD ESCAPE</span>
+              <span class="text-[10px] uppercase tracking-[0.2em] text-[#C8A66B] font-light block">Where the River Meets the Wild</span>
+            </div>
+          </div>
+          <p class="text-xs text-[#DCE6DF]/80 leading-relaxed max-w-sm mb-6">
+            Accredited luxury ecotourism operator dedicated exclusively to the Indian Sundarbans. Certified sustainable boat safaris, high-safety watchtower excursions, and authentic cultural stewardship.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-[#C8A66B] mb-4">Expeditions</h4>
+          <ul class="space-y-2 text-xs text-[#DCE6DF]/80">
+            <li><a href="packages.html?duration=day-trip" class="hover:text-white transition-colors">Day Delta Explorer</a></li>
+            <li><a href="packages.html?duration=2d1n" class="hover:text-white transition-colors">2D/1N Mangrove Classic</a></li>
+            <li><a href="packages.html?duration=3d2n" class="hover:text-white transition-colors">3D/2N Signature Sanctuary</a></li>
+            <li><a href="packages.html" class="hover:text-white transition-colors">Wildlife Photography Special</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-[#C8A66B] mb-4">Delta Discovery</h4>
+          <ul class="space-y-2 text-xs text-[#DCE6DF]/80">
+            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="blog.html" class="hover:text-white transition-colors">Field Chronicles & Blog</a></li>
+            <li><a href="gallery.html" class="hover:text-white transition-colors">Visual Expedition Archive</a></li>
+            <li><a href="contact.html#faqs" class="hover:text-white transition-colors">Permits & Seasonality FAQ</a></li>
+            <li><a href="terms.html" class="hover:text-white transition-colors">Forest Protocols</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-[#C8A66B] mb-4">Direct Contact</h4>
+          <ul class="space-y-3 text-xs text-[#DCE6DF]/80">
+            <li>
+              <span class="text-[#C8A66B] block font-semibold">Inquiries & Reservations:</span>
+              <a href="tel:+919564846891" class="hover:text-white font-mono text-sm block font-bold text-white">+91 9564846891</a>
+            </li>
+            <li>
+              <span class="text-[#C8A66B] block font-semibold">Primary Embarkation:</span>
+              <span>Godkhali Ghat, Canning, South 24 Parganas, West Bengal 743370</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-[11px] text-[#DCE6DF]/60 gap-4">
+        <div>&copy; <span class="current-year">2026</span> Sundarban Wild Escape. All rights reserved. Indian Sundarbans only.</div>
+        <div class="flex items-center space-x-6">
+          <a href="terms.html" class="hover:text-white transition-colors">Terms of Ecotourism</a>
+          <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="contact.html" class="hover:text-white transition-colors">Godkhali Route Map</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+

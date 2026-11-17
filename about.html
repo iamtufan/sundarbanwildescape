@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heritage & Philosophy | Sundarban Wild Escape</title>
+  <meta name="description" content="Discover the philosophy, tidal ecology, Mawali honey hunter traditions, and ethical ecotourism protocols of Sundarban Wild Escape in the Indian Sundarbans.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="apple-touch-icon" href="assets/images/logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            forest: '#123B2A',
+            midnight: '#0A211B',
+            foliage: '#426B50',
+            ivory: '#F7F3E9',
+            mist: '#DCE6DF',
+            gold: '#C8A66B',
+            charcoal: '#202722',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            cormorant: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['Manrope', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-[#F7F3E9] text-[#202722] font-sans antialiased selection:bg-[#C8A66B] selection:text-[#0A211B]">
+
+  <!-- Global Header -->
+  <header id="mainHeader" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-5 bg-transparent">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 group focus:outline-none">
+        <img 
+          src="assets/images/logo.png" 
+          alt="Sundarban Wild Escape Logo" 
+          class="w-12 h-12 md:w-14 md:h-14 rounded-full object-cover border border-[#C8A66B]/50 shadow-md transition-transform group-hover:scale-105"
+        />
+        <div class="flex flex-col">
+          <span class="font-serif text-lg sm:text-xl md:text-2xl font-bold tracking-wider text-white group-hover:text-[#C8A66B] transition-colors leading-tight">
+            SUNDARBAN WILD ESCAPE
+          </span>
+          <span class="text-[9px] sm:text-[10px] text-[#DCE6DF]/80 tracking-[0.2em] uppercase font-light">
+            Where the River Meets the Wild
+          </span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium text-white/90">
+        <a href="index.html" class="hover:text-[#C8A66B] transition-colors">Home</a>
+        <a href="about.html" class="text-[#C8A66B] font-semibold border-b border-[#C8A66B] pb-1">About</a>
+        <a href="packages.html" class="hover:text-[#C8A66B] transition-colors">Packages</a>
+        <a href="blog.html" class="hover:text-[#C8A66B] transition-colors">Blog</a>
+        <a href="contact.html" class="hover:text-[#C8A66B] transition-colors">Contact</a>
+      </nav>
+
+      <div class="hidden md:flex items-center space-x-5">
+        <a href="tel:+919564846891" class="text-white text-xs font-semibold flex items-center gap-2 hover:text-[#C8A66B] transition-colors">
+          <svg class="w-4 h-4 text-[#C8A66B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+          </svg>
+          <span>+91 9564846891</span>
+        </a>
+        <a href="contact.html" class="btn-gold text-xs py-2.5 px-5 rounded-full uppercase tracking-wider font-bold">
+          Book Expedition
+        </a>
+      </div>
+
+      <button id="mobileMenuBtn" class="lg:hidden text-white p-2 focus:outline-none" aria-label="Toggle Navigation Drawer" aria-expanded="false">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop & Drawer -->
+  <div id="mobileNavBackdrop" class="fixed inset-0 bg-black/60 z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+  <aside id="mobileNavDrawer" class="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-[#0A211B] z-50 transform translate-x-full transition-transform duration-300 flex flex-col justify-between p-8 border-l border-[#DCE6DF]/20 shadow-2xl">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-[#DCE6DF]/20 mb-8">
+        <div class="flex items-center gap-3">
+          <img src="assets/images/logo.png" alt="Sundarban Wild Escape Logo" class="w-11 h-11 rounded-full object-cover border border-[#C8A66B]/60 shadow-sm" />
+          <div>
+            <span class="font-serif text-base font-bold text-white block leading-tight">Sundarban Wild Escape</span>
+            <span class="text-[9px] text-[#C8A66B] uppercase tracking-widest">Heritage & Philosophy</span>
+          </div>
+        </div>
+        <button id="mobileCloseBtn" class="text-white/80 hover:text-white p-1 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+      <nav class="flex flex-col space-y-4 text-base font-medium text-white/90">
+        <a href="index.html" class="hover:text-[#C8A66B] py-2 border-b border-white/5 transition-colors">Home</a>
+        <a href="about.html" class="text-[#C8A66B] py-2 border-b border-white/5 font-semibold">About</a>
+        <a href="packages.html" class="hover:text-[#C8A66B] py-2 border-b border-white/5 transition-colors">Packages</a>
+        <a href="blog.html" class="hover:text-[#C8A66B] py-2 border-b border-white/5 transition-colors">Blog</a>
+        <a href="contact.html" class="hover:text-[#C8A66B] py-2 border-b border-white/5 transition-colors">Contact</a>
+      </nav>
+    </div>
+    <div class="pt-6 border-t border-[#DCE6DF]/20">
+      <a href="tel:+919564846891" class="text-white text-base font-bold font-serif hover:text-[#C8A66B] transition-colors block mb-3">+91 9564846891</a>
+      <a href="https://wa.me/919564846891" target="_blank" rel="noopener noreferrer" class="btn-gold w-full py-3 px-4 rounded-lg text-xs font-bold uppercase tracking-wider text-center block">
+        Direct WhatsApp Chat
+      </a>
+    </div>
+  </aside>
+
+  <!-- 1. HERO: HERITAGE OVERVIEW -->
+  <section class="relative min-h-[60vh] flex items-center justify-center bg-cover bg-center pt-32 pb-20 px-6 lg:px-12" style="background-image: linear-gradient(180deg, rgba(10,33,27,0.5) 0%, rgba(10,33,27,0.92) 100%), url('assets/images/jangleboatiing.jpg');">
+    <div class="max-w-5xl mx-auto text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-6">
+        <span class="w-2 h-2 rounded-full bg-[#C8A66B]"></span>
+        <span class="text-xs uppercase tracking-[0.25em] text-[#F7F3E9] font-semibold">Our Ethos & Origin</span>
+      </div>
+      <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-white mb-6 leading-tight">
+        Guardians of the <span class="italic font-normal font-cormorant text-[#C8A66B]">Tidal Frontier</span>
+      </h1>
+      <p class="text-base sm:text-xl text-[#DCE6DF]/90 font-light max-w-3xl mx-auto leading-relaxed">
+        Sundarban Wild Escape was established by conservation naturalists and native delta boatmen to offer an uncompromising alternative to commercial tourism: quiet luxury that actively protects the world’s most enigmatic tidal sanctuary.
+      </p>
+    </div>
+  </section>
+
+  <!-- 2. SECTION: OUR MISSION & STEWARDSHIP -->
+  <section class="py-24 px-6 lg:px-12 bg-white border-b border-[#DCE6DF]">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-5">
+          <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-[#426B50] mb-3">
+            <span class="w-6 h-[1px] bg-[#426B50]"></span>
+            <span>Ethical Foundation</span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#0A211B] mb-6">
+            Low Impact on Nature, High Impact on Local Dignity
+          </h2>
+          <p class="text-sm md:text-base text-[#202722]/85 leading-relaxed mb-6 font-light">
+            Ecotourism is hollow without community empowerment. In an ecosystem where human livelihoods and apex predators share a razor-thin border, our enterprise redirects tourist revenue directly to local households.
+          </p>
+          <ul class="space-y-4 text-xs md:text-sm text-[#202722]">
+            <li class="flex items-start gap-3">
+              <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">✓</span>
+              <span><strong>100% Native Employment:</strong> All boat captains, deckhands, chefs, and forest trackers are residents of Gosaba, Dayapur, and Pakhiralay islands.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">✓</span>
+              <span><strong>Poaching Deterrence:</strong> By providing stable, respectful ecotourism livelihoods, former woodcutters and crab fishers become passionate wildlife guardians.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">✓</span>
+              <span><strong>Zero Single-Use Plastics:</strong> We provide stainless steel/copper refill canisters and onboard filtration, banishing plastic bottles from the delta.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-7 grid grid-cols-2 gap-4">
+          <img src="assets/images/boatwithtraveler.jpg" alt="Local boatman navigating with travelers" class="rounded-xl border border-[#DCE6DF] h-64 sm:h-80 w-full object-cover shadow-md">
+          <img src="assets/images/fishcatching.jpg" alt="Sundarban traditional estuarine fishing" class="rounded-xl border border-[#DCE6DF] h-64 sm:h-80 w-full object-cover shadow-md mt-6">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SECTION: THE TIDAL DELTA SCIENCE -->
+  <section class="py-24 px-6 lg:px-12 bg-[#F7F3E9]">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-[#426B50] mb-3">
+          <span>Estuarine Science</span>
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#0A211B] mb-4">
+          The Anatomy of an Amphibious World
+        </h2>
+        <p class="text-sm md:text-base text-[#202722]/80 leading-relaxed font-light">
+          Unlike continental jungles with fixed earth, the Sundarbans disappears and reappears twice each day with the lunar tides.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="bg-white p-8 rounded-xl border border-[#DCE6DF] card-hover-lift">
+          <div class="w-12 h-12 rounded-full bg-[#123B2A] text-[#C8A66B] flex items-center justify-center font-serif font-bold text-lg mb-6">
+            ~4m
+          </div>
+          <h3 class="font-serif text-xl font-bold text-[#0A211B] mb-2">Extreme Tidal Oscillations</h3>
+          <p class="text-xs text-[#202722]/80 leading-relaxed">
+            The difference between low tide (<em>Bhati</em>) and high tide (<em>Jowar</em>) routinely exceeds 3.5 to 4.5 meters. Channels that allow a 40-foot cruiser at noon turn into exposed silt mudflats by sunset.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl border border-[#DCE6DF] card-hover-lift">
+          <div class="w-12 h-12 rounded-full bg-[#123B2A] text-[#C8A66B] flex items-center justify-center font-serif font-bold text-lg mb-6">
+            O₂
+          </div>
+          <h3 class="font-serif text-xl font-bold text-[#0A211B] mb-2">Pneumatophores (Breathing Roots)</h3>
+          <p class="text-xs text-[#202722]/80 leading-relaxed">
+            Because oxygen cannot penetrate waterlogged, anaerobic saline mud, mangrove species like Sundari and Goran sprout thousands of conical breathing roots upward into the open air like wooden spikes.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl border border-[#DCE6DF] card-hover-lift">
+          <div class="w-12 h-12 rounded-full bg-[#123B2A] text-[#C8A66B] flex items-center justify-center font-serif font-bold text-lg mb-6">
+            🛡️
+          </div>
+          <h3 class="font-serif text-xl font-bold text-[#0A211B] mb-2">Bengal's Living Bio-Shield</h3>
+          <p class="text-xs text-[#202722]/80 leading-relaxed">
+            The dense stilt-root matrix dissipates violent cyclone storm surges generated in the Bay of Bengal, protecting Kolkata and millions of hinterland lives from devastating oceanic inundation.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SECTION: SAFETY & FOREST PROTOCOL -->
+  <section class="py-24 px-6 lg:px-12 bg-[#0A211B] text-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6">
+          <span class="text-xs font-bold uppercase tracking-[0.25em] text-[#C8A66B] block mb-3">Zero Compromise</span>
+          <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            Safety Protocols in the Domain of the Tiger
+          </h2>
+          <p class="text-sm md:text-base text-[#DCE6DF]/85 font-light leading-relaxed mb-8">
+            The Sundarbans Tiger Reserve is governed by strict statutory wildlife protection laws under the West Bengal Forest Department. We implement triple-redundancy safety systems so our guests experience raw wilderness in tranquil security.
+          </p>
+
+          <div class="space-y-4">
+            <div class="bg-[#123B2A] p-5 rounded-xl border border-[#DCE6DF]/15">
+              <h4 class="text-sm font-bold text-[#C8A66B] mb-1">Approved Marine Lifejackets</h4>
+              <p class="text-xs text-[#DCE6DF]/80">Fitted life vests for every single passenger, including specialized child sizes, verified before every departure from Godkhali.</p>
+            </div>
+            <div class="bg-[#123B2A] p-5 rounded-xl border border-[#DCE6DF]/15">
+              <h4 class="text-sm font-bold text-[#C8A66B] mb-1">Enclosed Watchtowers & Fenced Corridors</h4>
+              <p class="text-xs text-[#DCE6DF]/80">Step ashore solely at Forest Department watchtowers protected by 20-foot wire fencing and armed forest security rangers.</p>
+            </div>
+            <div class="bg-[#123B2A] p-5 rounded-xl border border-[#DCE6DF]/15">
+              <h4 class="text-sm font-bold text-[#C8A66B] mb-1">Official Forest Naturalist on Board</h4>
+              <p class="text-xs text-[#DCE6DF]/80">Every vessel entry requires an accredited Forest Department local naturalist with VHF radio link to river patrol stations.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 bg-[#123B2A]/70 p-8 md:p-10 rounded-2xl border border-[#DCE6DF]/20">
+          <h3 class="font-serif text-2xl font-bold text-white mb-6">Sundarban Tiger Reserve Rules</h3>
+          <ul class="space-y-4 text-xs md:text-sm text-[#DCE6DF]/90 divide-y divide-[#DCE6DF]/10">
+            <li class="pt-3 first:pt-0">
+              <span class="font-bold text-[#C8A66B] block mb-0.5">1. Strict Speed Limits:</span>
+              Cruisers must maintain slow, silent speeds inside core buffer canals to protect riverbanks from wake erosion and dolphin disruption.
+            </li>
+            <li class="pt-3">
+              <span class="font-bold text-[#C8A66B] block mb-0.5">2. Sunset Mooring Law:</span>
+              No private boat is legally permitted to navigate inside reserve channels past sunset (strictly 5:30 PM–6:00 PM cutoff). All boats must anchor outside core corridors.
+            </li>
+            <li class="pt-3">
+              <span class="font-bold text-[#C8A66B] block mb-0.5">3. Complete Prohibition of Sound:</span>
+              Loudspeakers, sound boxes, and noisy generators are strictly barred by law. The delta remains silent so wildlife behaviors remain natural.
+            </li>
+            <li class="pt-3">
+              <span class="font-bold text-[#C8A66B] block mb-0.5">4. No Animal Baiting or Chasing:</span>
+              We hold strict zero-tolerance policies against baiting or cornering animals on mudflats.
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. SECTION: LOCAL CULTURE & LIVELIHOODS (BONBIBI & MAWALIS) -->
+  <section class="py-24 px-6 lg:px-12 bg-white border-b border-[#DCE6DF]">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-[#426B50] mb-3">
+          <span>Tidal Folklore & Human Heritage</span>
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#0A211B] mb-4">
+          Bonbibi: The Spirit of Equal Mercy
+        </h2>
+        <p class="text-sm md:text-base text-[#202722]/80 leading-relaxed font-light">
+          Deep within the Sundarbans, religious divides dissolve into a shared code of forest reverence.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="rounded-xl overflow-hidden mb-6 border border-[#DCE6DF] h-56 shadow-sm">
+            <img src="assets/images/jhumur dance.jpg" alt="Traditional Bonbibi and Jhumur folk performance" class="w-full h-full object-cover">
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-[#0A211B] mb-4">
+            The Legend of Bonbibi and Dokkhin Rai
+          </h3>
+          <p class="text-xs md:text-sm text-[#202722]/85 leading-relaxed mb-4">
+            In Bengal’s tidal folklore, <strong class="text-[#123B2A]">Bonbibi</strong> is the guardian goddess of the forest, revered by Hindu and Muslim villagers alike. Her adversary is <strong class="text-[#123B2A]">Dokkhin Rai</strong>, the lord of the tigers who preys upon greedy humans who enter the jungle with excessive avarice.
+          </p>
+          <p class="text-xs md:text-sm text-[#202722]/85 leading-relaxed mb-4">
+            Before any local honey hunter (<em>Mawali</em>), woodcutter (<em>Bawali</em>), or fisherman (<em>Jele</em>) steps onto the forest mudbanks, they bow at humble earthen mud-shrines dedicated to Bonbibi, vowing to take only what they need to survive and never more.
+          </p>
+          <div class="p-5 bg-[#F7F3E9] rounded-xl border border-[#DCE6DF] text-xs text-[#426B50]">
+            <span class="font-bold text-[#123B2A] block mb-1">Bonbibi Palagaan (Folk Theatre)</span>
+            During our overnight expeditions, we organize an authentic open-air musical recital performed by island artists, passing down this oral epic to travelers under starlight.
+          </div>
+        </div>
+
+        <div class="bg-[#F7F3E9] p-8 rounded-2xl border border-[#DCE6DF]">
+          <div class="rounded-xl overflow-hidden mb-6 border border-[#DCE6DF] h-56 shadow-sm">
+            <img src="assets/images/honeycollection.jpg" alt="Sundarban Mawalis honey collection" class="w-full h-full object-cover">
+          </div>
+          <h3 class="font-serif text-xl font-bold text-[#0A211B] mb-4">
+            The Mawalis: Ancient Wild Honey Hunters
+          </h3>
+          <p class="text-xs md:text-sm text-[#202722]/80 leading-relaxed mb-4">
+            Every April and May, small teams of Mawalis venture into the deep core mangrove forest under Forest Department licensing to harvest wild honey from the giant Asian rock bee (<em>Apis dorsata</em>).
+          </p>
+          <p class="text-xs md:text-sm text-[#202722]/80 leading-relaxed mb-6">
+            Facing the constant threat of tigers, they use fragrant mangrove smoke (<em>kuru</em>) to gently dislodge bees without harming the colony, harvesting only the honey-bearing crown while leaving the brood comb intact to regenerate.
+          </p>
+          <div class="flex items-center gap-4 text-xs font-semibold text-[#123B2A] bg-white p-4 rounded-xl border border-[#DCE6DF]">
+            <span class="text-2xl">🍯</span>
+            <span>We source 100% pure raw wild mangrove honey directly from Mawali cooperatives, serving it at breakfast on our vessels.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. SECTION: TEAM COMMITMENT & CALL TO ACTION -->
+  <section class="py-20 px-6 lg:px-12 bg-[#F7F3E9]">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-[#426B50] mb-3">
+        <span>Direct Operator Transparency</span>
+      </div>
+      <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#0A211B] mb-6">
+        No Middlemen. No Commission Resellers.
+      </h2>
+      <p class="text-sm md:text-base text-[#202722]/80 leading-relaxed mb-8 font-light">
+        When you call or WhatsApp Sundarban Wild Escape, you speak directly with our senior expedition directors who manage our own boats and field staff at Godkhali. We answer your questions candidly regarding season, tides, and permits.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="tel:+919564846891" class="btn-gold py-3.5 px-8 rounded-full text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-md">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+          Call +91 9564846891
+        </a>
+        <a href="packages.html" class="py-3.5 px-8 rounded-full bg-[#123B2A] text-white hover:bg-[#0A211B] text-xs font-bold uppercase tracking-wider transition-all">
+          Explore Curated Itineraries &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="bg-[#0A211B] text-white pt-20 pb-12 border-t border-[#DCE6DF]/15">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-16 border-b border-[#DCE6DF]/15">
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-3">
+            <img src="assets/images/logo.png" alt="Sundarban Wild Escape Logo" class="w-12 h-12 rounded-full object-cover border border-[#C8A66B]/50 shadow-md" />
+            <div>
+              <span class="font-serif text-xl sm:text-2xl font-bold tracking-wider text-white block leading-tight">SUNDARBAN WILD ESCAPE</span>
+              <span class="text-[10px] uppercase tracking-[0.2em] text-[#C8A66B] font-light block">Where the River Meets the Wild</span>
+            </div>
+          </div>
+          <p class="text-xs text-[#DCE6DF]/80 leading-relaxed max-w-sm mb-6">
+            Accredited luxury ecotourism operator dedicated exclusively to the Indian Sundarbans. Certified sustainable boat safaris, high-safety watchtower excursions, and authentic cultural stewardship.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-[#C8A66B] mb-4">Expeditions</h4>
+          <ul class="space-y-2 text-xs text-[#DCE6DF]/80">
+            <li><a href="packages.html?duration=day-trip" class="hover:text-white transition-colors">Day Delta Explorer</a></li>
+            <li><a href="packages.html?duration=2d1n" class="hover:text-white transition-colors">2D/1N Mangrove Classic</a></li>
+            <li><a href="packages.html?duration=3d2n" class="hover:text-white transition-colors">3D/2N Signature Sanctuary</a></li>
+            <li><a href="packages.html" class="hover:text-white transition-colors">Wildlife Photography Special</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-[#C8A66B] mb-4">Delta Discovery</h4>
+          <ul class="space-y-2 text-xs text-[#DCE6DF]/80">
+            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="blog.html" class="hover:text-white transition-colors">Field Chronicles & Blog</a></li>
+            <li><a href="gallery.html" class="hover:text-white transition-colors">Visual Expedition Archive</a></li>
+            <li><a href="contact.html#faqs" class="hover:text-white transition-colors">Permits & Seasonality FAQ</a></li>
+            <li><a href="terms.html" class="hover:text-white transition-colors">Forest Protocols</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-[#C8A66B] mb-4">Direct Contact</h4>
+          <ul class="space-y-3 text-xs text-[#DCE6DF]/80">
+            <li>
+              <span class="text-[#C8A66B] block font-semibold">Inquiries & Reservations:</span>
+              <a href="tel:+919564846891" class="hover:text-white font-mono text-sm block font-bold text-white">+91 9564846891</a>
+            </li>
+            <li>
+              <span class="text-[#C8A66B] block font-semibold">Primary Embarkation:</span>
+              <span>Godkhali Ghat, Canning, South 24 Parganas, West Bengal 743370</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-[11px] text-[#DCE6DF]/60 gap-4">
+        <div>&copy; <span class="current-year">2026</span> Sundarban Wild Escape. All rights reserved. Indian Sundarbans only.</div>
+        <div class="flex items-center space-x-6">
+          <a href="terms.html" class="hover:text-white transition-colors">Terms of Ecotourism</a>
+          <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="contact.html" class="hover:text-white transition-colors">Godkhali Route Map</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a id="whatsappFloat" href="https://wa.me/919564846891?text=Hello%20Sundarban%20Wild%20Escape%2C%20I%20would%20like%20to%20inquire%20about%20your%20philosophy%20and%20expeditions." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-40 bg-[#25D366] text-white p-3.5 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 flex items-center justify-center whatsapp-pulse" title="Chat on WhatsApp" aria-label="Direct WhatsApp Contact">
+    <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

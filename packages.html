@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curated Mangrove Expeditions | Sundarban Wild Escape</title>
+  <meta name="description" content="Explore luxury ecotourism packages in the Indian Sundarbans. Day safaris, 2D/1N classic overnighters, 3D/2N signature expeditions, and photography charters. Call +91 9564846891.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="apple-touch-icon" href="assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            forest: '#123B2A',
+            midnight: '#0A211B',
+            foliage: '#426B50',
+            ivory: '#F7F3E9',
+            mist: '#DCE6DF',
+            gold: '#C8A66B',
+            charcoal: '#202722',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            cormorant: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['Manrope', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-[#F7F3E9] text-[#202722] font-sans antialiased selection:bg-[#C8A66B] selection:text-[#0A211B]">
+
+  <!-- Global Header -->
+  <header id="mainHeader" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-5 bg-transparent">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 group focus:outline-none">
+        <img 
+          src="assets/images/logo.png" 
+          alt="Sundarban Wild Escape Logo" 
+          class="w-12 h-12 md:w-14 md:h-14 rounded-full object-cover border border-[#C8A66B]/50 shadow-md transition-transform group-hover:scale-105"
+        />
+        <div class="flex flex-col">
+          <span class="font-serif text-lg sm:text-xl md:text-2xl font-bold tracking-wider text-white group-hover:text-[#C8A66B] transition-colors leading-tight">
+            SUNDARBAN WILD ESCAPE
+          </span>
+          <span class="text-[9px] sm:text-[10px] text-[#DCE6DF]/80 tracking-[0.2em] uppercase font-light">
+            Where the River Meets the Wild
+          </span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium text-white/90">
+        <a href="index.html" class="hover:text-[#C8A66B] transition-colors">Home</a>
+        <a href="about.html" class="hover:text-[#C8A66B] transition-colors">About</a>
+        <a href="packages.html" class="text-[#C8A66B] font-semibold border-b border-[#C8A66B] pb-1">Packages</a>
+        <a href="blog.html" class="hover:text-[#C8A66B] transition-colors">Blog</a>
+        <a href="contact.html" class="hover:text-[#C8A66B] transition-colors">Contact</a>
+      </nav>
+
+      <div class="hidden md:flex items-center space-x-5">
+        <a href="tel:+919564846891" class="text-white text-xs font-semibold flex items-center gap-2 hover:text-[#C8A66B] transition-colors">
+          <svg class="w-4 h-4 text-[#C8A66B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+          </svg>
+          <span>+91 9564846891</span>
+        </a>
+        <a href="contact.html" class="btn-gold text-xs py-2.5 px-5 rounded-full uppercase tracking-wider font-bold">
+          Book Expedition
+        </a>
+      </div>
+
+      <button id="mobileMenuBtn" class="lg:hidden text-white p-2 focus:outline-none" aria-label="Toggle Navigation Drawer" aria-expanded="false">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop & Drawer -->
+  <div id="mobileNavBackdrop" class="fixed inset-0 bg-black/60 z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+  <aside id="mobileNavDrawer" class="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-[#0A211B] z-50 transform translate-x-full transition-transform duration-300 flex flex-col justify-between p-8 border-l border-[#DCE6DF]/20 shadow-2xl">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-[#DCE6DF]/20 mb-8">
+        <div class="flex items-center gap-3">
+          <img src="assets/images/logo.png" alt="Sundarban Wild Escape Logo" class="w-11 h-11 rounded-full object-cover border border-[#C8A66B]/60 shadow-sm" />
+          <div>
+            <span class="font-serif text-base font-bold text-white block leading-tight">Sundarban Wild Escape</span>
+            <span class="text-[9px] text-[#C8A66B] uppercase tracking-widest">Curated Tour Catalog</span>
+          </div>
+        </div>
+        <button id="mobileCloseBtn" class="text-white/80 hover:text-white p-1 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+      <nav class="flex flex-col space-y-4 text-base font-medium text-white/90">
+        <a href="index.html" class="hover:text-[#C8A66B] py-2 border-b border-white/5 transition-colors">Home</a>
+        <a href="about.html" class="hover:text-[#C8A66B] py-2 border-b border-white/5 transition-colors">About</a>
+        <a href="packages.html" class="text-[#C8A66B] py-2 border-b border-white/5 font-semibold">Packages</a>
+        <a href="blog.html" class="hover:text-[#C8A66B] py-2 border-b border-white/5 transition-colors">Blog</a>
+        <a href="contact.html" class="hover:text-[#C8A66B] py-2 border-b border-white/5 transition-colors">Contact</a>
+      </nav>
+    </div>
+    <div class="pt-6 border-t border-[#DCE6DF]/20">
+      <a href="tel:+919564846891" class="text-white text-base font-bold font-serif hover:text-[#C8A66B] transition-colors block mb-3">+91 9564846891</a>
+      <a href="https://wa.me/919564846891" target="_blank" rel="noopener noreferrer" class="btn-gold w-full py-3 px-4 rounded-lg text-xs font-bold uppercase tracking-wider text-center block">
+        Direct WhatsApp Chat
+      </a>
+    </div>
+  </aside>
+
+  <!-- 1. HERO: TOUR PACKAGES BANNER -->
+  <section class="relative min-h-[40vh] sm:min-h-[48vh] md:min-h-[55vh] flex items-center justify-center bg-cover bg-center pt-28 sm:pt-32 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-12 overflow-hidden" style="background-image: linear-gradient(180deg, rgba(10,33,27,0.45) 0%, rgba(10,33,27,0.85) 100%), url('assets/images/morningforest.jpg');">
+    
+    <!-- Center Card / Badge as seen in reference image -->
+    <div class="max-w-md mx-auto text-center relative z-10">
+      <div class="inline-block bg-[#F7F3E9]/95 backdrop-blur-md border-2 border-[#C8A66B] px-8 sm:px-14 py-4 sm:py-7 rounded-2xl sm:rounded-3xl shadow-2xl mb-2 text-center ring-4 ring-white/20">
+        <span class="font-script text-3xl sm:text-5xl md:text-6xl text-[#0A211B] font-bold block leading-none mb-2 sm:mb-3 tracking-wide">
+          Packages
+        </span>
+        <div class="flex items-center justify-center gap-1.5 text-xs text-[#123B2A] font-semibold">
+          <svg class="w-3.5 h-3.5 text-[#C8A66B]" fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg>
+          <a href="index.html" class="hover:underline">Home</a>
+          <span>/</span>
+          <span class="text-[#426B50]">Packages</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. MAIN TOUR PACKAGES SECTION (Exact match with reference image content & layout) -->
+  <section class="py-16 md:py-24 px-6 lg:px-12 bg-[#0A211B] text-white border-b border-[#DCE6DF]/15">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-4xl mx-auto mb-14">
+        <span class="font-script text-3xl sm:text-4xl text-[#C8A66B] block mb-2 tracking-wide">
+          Sundarban Tour Packages
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-5 tracking-tight">
+          Sundarban Tour <span class="text-[#C8A66B]">Packages</span>
+        </h2>
+        <p class="text-xs sm:text-sm md:text-base text-[#DCE6DF]/85 leading-relaxed font-light max-w-3xl mx-auto">
+          At Sundarban Wild Escape, we offer a variety of thoughtfully crafted Sundarban tour packages suitable for families, solo travelers, nature lovers, and corporate groups. Our packages are all-inclusive, eco-conscious, and guided by local experts to ensure you get the most authentic and enriching experience. Whether you're looking for a weekend escape or an extended nature retreat, we have a tour for every kind of traveler.
+        </p>
+      </div>
+
+      <!-- The 3 Flagship Package Cards Grid (From Reference) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        
+        <!-- CARD 1: Sundarban 1 Day Tour -->
+        <article class="bg-[#0D2A20] rounded-3xl overflow-hidden border border-[#DCE6DF]/20 shadow-xl card-hover-lift flex flex-col justify-between">
+          <div>
+            <!-- Main Image with Overlapping Circular Insets -->
+            <div class="relative h-60 overflow-hidden">
+              <img src="assets/images/jangleboatiing.jpg" alt="Sundarban 1 Day Tour" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0D2A20] via-transparent to-transparent"></div>
+              
+              <!-- Overlapping Circular Thumbnails -->
+              <div class="absolute -bottom-6 left-6 flex items-center z-10">
+                <div class="w-14 h-14 rounded-full border-2 border-white shadow-xl overflow-hidden bg-[#0A211B]">
+                  <img src="assets/images/boatwithtraveler.jpg" alt="Travelers on boat" class="w-full h-full object-cover">
+                </div>
+                <div class="w-14 h-14 -ml-4 rounded-full border-2 border-[#C8A66B] shadow-xl overflow-hidden bg-[#0A211B]">
+                  <img src="assets/images/corcodile.jpg" alt="Estuarine crocodile" class="w-full h-full object-cover">
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Body -->
+            <div class="p-6 md:p-8 pt-8">
+              
+              <!-- Amenity Icons Strip -->
+              <div class="flex items-center justify-between text-[#C8A66B] bg-[#0A211B]/80 py-2.5 px-4 rounded-xl border border-[#DCE6DF]/15 mb-5 text-xs">
+                <div class="flex items-center gap-1" title="Day Berths / Rest Cabins">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                </div>
+                <div class="flex items-center gap-1" title="AC Kolkata Transfer">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+                </div>
+                <div class="flex items-center gap-1" title="Fresh Bengali Meals">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                </div>
+                <div class="flex items-center gap-1" title="Safari Boat Cruiser">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <div class="flex items-center gap-1" title="Forest Permit & Naturalist">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                </div>
+              </div>
+
+              <!-- Title & Excerpt -->
+              <h3 class="text-2xl font-serif font-bold text-white mb-2 leading-snug">
+                Sundarban 1 Day Tour
+              </h3>
+              <p class="text-xs sm:text-sm text-[#DCE6DF]/80 leading-relaxed mb-6 font-light line-clamp-3">
+                Short on time but still want to explore the beauty of Sundarbans? Our 1-day tour is ideal for...
+              </p>
+
+              <!-- Price & Details Button -->
+              <div class="flex items-center justify-between border-t border-[#DCE6DF]/15 pt-4">
+                <div>
+                  <span class="text-[10px] text-[#C8A66B] uppercase font-bold block">Starting from</span>
+                  <span class="text-xl font-serif font-bold text-white">₹2,850</span>
+                  <span class="text-[10px] text-[#DCE6DF]/70">/ person</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <a href="https://wa.me/919564846891?text=Hello%20Sundarban%20Wild%20Escape%2C%20I%20want%20to%20inquire%20about%20the%20Sundarban%201%20Day%20Tour." target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-full border border-[#25D366] text-[#25D366] hover:bg-[#25D366]/20 transition-all" title="Inquire on WhatsApp">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                  </a>
+                  <a href="package-details.html?id=day-explorer" class="btn-gold py-2.5 px-5 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-md hover:scale-105 transition-all">
+                    <span>View Details</span>
+                    <span class="text-base leading-none">➔</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 2: Sundarban 1 Night 2 Days -->
+        <article class="bg-[#0D2A20] rounded-3xl overflow-hidden border border-[#DCE6DF]/20 shadow-xl card-hover-lift flex flex-col justify-between">
+          <div>
+            <!-- Main Image with Overlapping Circular Insets -->
+            <div class="relative h-60 overflow-hidden">
+              <img src="assets/images/deer.jpg" alt="Sundarban 1 Night 2 Days" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0D2A20] via-transparent to-transparent"></div>
+              
+              <!-- Overlapping Circular Thumbnails -->
+              <div class="absolute -bottom-6 left-6 flex items-center z-10">
+                <div class="w-14 h-14 rounded-full border-2 border-white shadow-xl overflow-hidden bg-[#0A211B]">
+                  <img src="assets/images/morningforest.jpg" alt="Mangrove sunset" class="w-full h-full object-cover">
+                </div>
+                <div class="w-14 h-14 -ml-4 rounded-full border-2 border-[#C8A66B] shadow-xl overflow-hidden bg-[#0A211B]">
+                  <img src="assets/images/jhumur dance.jpg" alt="Jhumur folk dance" class="w-full h-full object-cover">
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Body -->
+            <div class="p-6 md:p-8 pt-8">
+              
+              <!-- Amenity Icons Strip -->
+              <div class="flex items-center justify-between text-[#C8A66B] bg-[#0A211B]/80 py-2.5 px-4 rounded-xl border border-[#DCE6DF]/15 mb-5 text-xs">
+                <div class="flex items-center gap-1" title="Deluxe AC Eco-Cottage">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                </div>
+                <div class="flex items-center gap-1" title="AC Kolkata Transfer">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+                </div>
+                <div class="flex items-center gap-1" title="All 6 Meals Included">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                </div>
+                <div class="flex items-center gap-1" title="2-Day Safari Boat">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <div class="flex items-center gap-1" title="Forest Permit & Naturalist">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                </div>
+              </div>
+
+              <!-- Title & Excerpt -->
+              <h3 class="text-2xl font-serif font-bold text-white mb-2 leading-snug">
+                Sundarban 1 Night 2 Days
+              </h3>
+              <p class="text-xs sm:text-sm text-[#DCE6DF]/80 leading-relaxed mb-6 font-light line-clamp-3">
+                Perfect for a weekend trip from Kolkata, this short but scenic package gives you a taste of ...
+              </p>
+
+              <!-- Price & Details Button -->
+              <div class="flex items-center justify-between border-t border-[#DCE6DF]/15 pt-4">
+                <div>
+                  <span class="text-[10px] text-[#C8A66B] uppercase font-bold block">Starting from</span>
+                  <span class="text-xl font-serif font-bold text-white">₹5,450</span>
+                  <span class="text-[10px] text-[#DCE6DF]/70">/ person</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <a href="https://wa.me/919564846891?text=Hello%20Sundarban%20Wild%20Escape%2C%20I%20want%20to%20inquire%20about%20the%20Sundarban%201%20Night%202%20Days%20package." target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-full border border-[#25D366] text-[#25D366] hover:bg-[#25D366]/20 transition-all" title="Inquire on WhatsApp">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                  </a>
+                  <a href="package-details.html?id=mangrove-classic-2d1n" class="btn-gold py-2.5 px-5 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-md hover:scale-105 transition-all">
+                    <span>View Details</span>
+                    <span class="text-base leading-none">➔</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 3: Sundarban 2Nights 3 Days -->
+        <article class="bg-[#0D2A20] rounded-3xl overflow-hidden border border-[#DCE6DF]/20 shadow-xl card-hover-lift flex flex-col justify-between">
+          <div>
+            <!-- Main Image with Overlapping Circular Insets -->
+            <div class="relative h-60 overflow-hidden">
+              <img src="assets/images/tiger.jpg" alt="Sundarban 2Nights 3 Days" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0D2A20] via-transparent to-transparent"></div>
+              
+              <!-- Overlapping Circular Thumbnails -->
+              <div class="absolute -bottom-6 left-6 flex items-center z-10">
+                <div class="w-14 h-14 rounded-full border-2 border-white shadow-xl overflow-hidden bg-[#0A211B]">
+                  <img src="assets/images/boatwithtraveler.jpg" alt="Boat with travelers" class="w-full h-full object-cover">
+                </div>
+                <div class="w-14 h-14 -ml-4 rounded-full border-2 border-[#C8A66B] shadow-xl overflow-hidden bg-[#0A211B]">
+                  <img src="assets/images/forest1.jpg" alt="Mangrove wilderness" class="w-full h-full object-cover">
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Body -->
+            <div class="p-6 md:p-8 pt-8">
+              
+              <!-- Amenity Icons Strip -->
+              <div class="flex items-center justify-between text-[#C8A66B] bg-[#0A211B]/80 py-2.5 px-4 rounded-xl border border-[#DCE6DF]/15 mb-5 text-xs">
+                <div class="flex items-center gap-1" title="Premier Riverfront Suite">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                </div>
+                <div class="flex items-center gap-1" title="AC Kolkata Transfer">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+                </div>
+                <div class="flex items-center gap-1" title="All Gourmet Meals">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                </div>
+                <div class="flex items-center gap-1" title="3-Day Deep Safari Boat">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <div class="flex items-center gap-1" title="Dobanki & Netidhopani Permits">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                </div>
+              </div>
+
+              <!-- Title & Excerpt -->
+              <h3 class="text-2xl font-serif font-bold text-white mb-2 leading-snug">
+                Sundarban 2Nights 3 Days
+              </h3>
+              <p class="text-xs sm:text-sm text-[#DCE6DF]/80 leading-relaxed mb-6 font-light line-clamp-3">
+                Our bestselling package! Dive deeper into the wilderness with extended safaris, village experiences, and ..
+              </p>
+
+              <!-- Price & Details Button -->
+              <div class="flex items-center justify-between border-t border-[#DCE6DF]/15 pt-4">
+                <div>
+                  <span class="text-[10px] text-[#C8A66B] uppercase font-bold block">Starting from</span>
+                  <span class="text-xl font-serif font-bold text-white">₹9,800</span>
+                  <span class="text-[10px] text-[#DCE6DF]/70">/ person</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <a href="https://wa.me/919564846891?text=Hello%20Sundarban%20Wild%20Escape%2C%20I%20want%20to%20inquire%20about%20the%20Sundarban%202Nights%203%20Days%20package." target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-full border border-[#25D366] text-[#25D366] hover:bg-[#25D366]/20 transition-all" title="Inquire on WhatsApp">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                  </a>
+                  <a href="package-details.html?id=wilderness-signature-3d2n" class="btn-gold py-2.5 px-5 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-md hover:scale-105 transition-all">
+                    <span>View Details</span>
+                    <span class="text-base leading-none">➔</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3. ALL CURATED EXPEDITIONS & SPECIAL CHARTERS (FILTERABLE CATALOG) -->
+  <section class="py-16 px-6 lg:px-12 bg-[#0A211B] text-white border-b border-[#DCE6DF]/15">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="text-xs font-bold uppercase tracking-[0.2em] text-[#C8A66B] block mb-2">Explore Full Expedition Catalog</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mb-3">
+          Specialized Charters & <span class="text-[#C8A66B]">Curated Itineraries</span>
+        </h2>
+        <p class="text-xs sm:text-sm text-[#DCE6DF]/80 leading-relaxed font-light">
+          Filter by your preferred travel duration or specialized style—including ornithological birding, multi-generational family cruises, and secluded couples retreats.
+        </p>
+      </div>
+
+      <!-- Filter Controls Bar -->
+      <div class="bg-[#0D2A20] p-4 rounded-2xl border border-[#DCE6DF]/20 shadow-lg mb-8 flex flex-col lg:flex-row items-center justify-between gap-4">
+        
+        <!-- Duration Filter Pills -->
+        <div class="flex items-center flex-wrap gap-2 w-full lg:w-auto">
+          <span class="text-xs font-bold uppercase tracking-wider text-[#C8A66B] mr-2 shrink-0">Duration:</span>
+          <button class="filter-duration bg-[#C8A66B] text-[#0A211B] text-xs font-bold py-1.5 px-3.5 rounded-full border border-[#C8A66B] transition-all" data-duration="all">
+            All Durations
+          </button>
+          <button class="filter-duration bg-[#0A211B] text-[#DCE6DF] text-xs font-semibold py-1.5 px-3.5 rounded-full border border-[#DCE6DF]/20 hover:border-[#C8A66B] transition-all" data-duration="day-trip">
+            Day Trip
+          </button>
+          <button class="filter-duration bg-[#0A211B] text-[#DCE6DF] text-xs font-semibold py-1.5 px-3.5 rounded-full border border-[#DCE6DF]/20 hover:border-[#C8A66B] transition-all" data-duration="2d1n">
+            2D / 1N
+          </button>
+          <button class="filter-duration bg-[#0A211B] text-[#DCE6DF] text-xs font-semibold py-1.5 px-3.5 rounded-full border border-[#DCE6DF]/20 hover:border-[#C8A66B] transition-all" data-duration="3d2n">
+            3D / 2N
+          </button>
+        </div>
+
+        <!-- Style Filter Pills & Search -->
+        <div class="flex items-center flex-wrap gap-2 w-full lg:w-auto justify-between lg:justify-end">
+          
+          <div class="flex items-center gap-1.5 overflow-x-auto pb-1 lg:pb-0">
+            <span class="text-xs font-bold uppercase tracking-wider text-[#C8A66B] mr-1 shrink-0">Style:</span>
+            <button class="filter-style bg-[#C8A66B] text-[#0A211B] text-xs font-bold py-1.5 px-3 rounded-full border border-[#C8A66B] transition-all" data-style="all">
+              All
+            </button>
+            <button class="filter-style bg-[#0A211B] text-[#DCE6DF] text-xs font-semibold py-1.5 px-3 rounded-full border border-[#DCE6DF]/20 hover:border-[#C8A66B] transition-all" data-style="photography">
+              Photography
+            </button>
+            <button class="filter-style bg-[#0A211B] text-[#DCE6DF] text-xs font-semibold py-1.5 px-3 rounded-full border border-[#DCE6DF]/20 hover:border-[#C8A66B] transition-all" data-style="family">
+              Family
+            </button>
+            <button class="filter-style bg-[#0A211B] text-[#DCE6DF] text-xs font-semibold py-1.5 px-3 rounded-full border border-[#DCE6DF]/20 hover:border-[#C8A66B] transition-all" data-style="romantic">
+              Honeymoon
+            </button>
+          </div>
+
+          <!-- Keyword Search -->
+          <div class="relative w-full sm:w-44 mt-2 sm:mt-0">
+            <input 
+              type="text" 
+              id="packageSearch" 
+              placeholder="Search..." 
+              class="w-full text-xs py-1.5 pl-8 pr-3 rounded-full bg-[#0A211B] text-white border border-[#DCE6DF]/20 focus:border-[#C8A66B] focus:outline-none"
+            >
+            <svg class="w-3.5 h-3.5 text-[#C8A66B] absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Counter & Reset Bar -->
+      <div class="flex items-center justify-between mb-8 pb-3 border-b border-[#DCE6DF]/15">
+        <span id="resultsCount" class="text-xs font-bold uppercase tracking-wider text-[#C8A66B]">
+          Showing curated expeditions
+        </span>
+        <button id="resetFiltersBtn" class="text-xs text-[#C8A66B] hover:text-white font-semibold flex items-center gap-1 transition-colors">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+          </svg>
+          Reset Filters
+        </button>
+      </div>
+
+      <!-- JavaScript Injected Grid Container -->
+      <div id="packagesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Rendered dynamically by js/packages.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. PACKAGE INCLUSIONS COMPARISON TABLE -->
+  <section class="py-20 px-6 lg:px-12 bg-white border-y border-[#DCE6DF]">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-[0.2em] text-[#426B50] block mb-2">Transparent Comparison</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#0A211B] mb-4">
+          Compare Expedition Features
+        </h2>
+        <p class="text-xs sm:text-sm text-[#202722]/80 leading-relaxed font-light">
+          Every itinerary is crafted with our signature zero-plastic and certified safety standards.
+        </p>
+      </div>
+
+      <!-- Responsive Comparison Table -->
+      <div class="overflow-x-auto rounded-xl border border-[#DCE6DF] shadow-sm">
+        <table class="w-full text-left text-xs sm:text-sm">
+          <thead class="bg-[#123B2A] text-white font-serif">
+            <tr>
+              <th class="p-4 sm:p-5 font-bold">Feature / Inclusions</th>
+              <th class="p-4 sm:p-5 font-bold text-center">Day Delta Explorer</th>
+              <th class="p-4 sm:p-5 font-bold text-center">Mangrove Classic (2D/1N)</th>
+              <th class="p-4 sm:p-5 font-bold text-center bg-[#0A211B] text-[#C8A66B]">Signature Sanctuary (3D/2N)</th>
+              <th class="p-4 sm:p-5 font-bold text-center">Photography Special</th>
+              <th class="p-4 sm:p-5 font-bold text-center">Private Charter</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-[#DCE6DF] bg-white text-[#202722]">
+            <tr>
+              <td class="p-4 font-bold bg-[#F7F3E9]/50">Duration</td>
+              <td class="p-4 text-center">1 Day (14 Hrs)</td>
+              <td class="p-4 text-center">2 Days / 1 Night</td>
+              <td class="p-4 text-center bg-[#F7F3E9]/30 font-bold">3 Days / 2 Nights</td>
+              <td class="p-4 text-center">3 Days / 2 Nights</td>
+              <td class="p-4 text-center">2D/1N or 3D/2N</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-bold bg-[#F7F3E9]/50">Accommodations</td>
+              <td class="p-4 text-center text-stone-500">Day berths on boat</td>
+              <td class="p-4 text-center">Deluxe AC Eco-Cottage</td>
+              <td class="p-4 text-center bg-[#F7F3E9]/30 font-semibold">Premier Riverfront Suite</td>
+              <td class="p-4 text-center">AC Cottage + Power Hubs</td>
+              <td class="p-4 text-center">Private Family Villa / Cottages</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-bold bg-[#F7F3E9]/50">Dobanki Canopy Walk</td>
+              <td class="p-4 text-center text-stone-400">—</td>
+              <td class="p-4 text-center text-stone-400">—</td>
+              <td class="p-4 text-center bg-[#F7F3E9]/30 text-emerald-700 font-bold">✓ Included</td>
+              <td class="p-4 text-center text-emerald-700 font-bold">✓ Included</td>
+              <td class="p-4 text-center text-emerald-700 font-bold">✓ Included (Option)</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-bold bg-[#F7F3E9]/50">Netidhopani 400-Yr Ruins</td>
+              <td class="p-4 text-center text-stone-400">—</td>
+              <td class="p-4 text-center text-stone-400">—</td>
+              <td class="p-4 text-center bg-[#F7F3E9]/30 text-emerald-700 font-bold">✓ Forest Permit Permitted</td>
+              <td class="p-4 text-center text-stone-400">—</td>
+              <td class="p-4 text-center text-stone-400">—</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-bold bg-[#F7F3E9]/50">Bonbibi Folk Theatrical Play</td>
+              <td class="p-4 text-center text-stone-400">—</td>
+              <td class="p-4 text-center text-emerald-700 font-bold">✓ Included</td>
+              <td class="p-4 text-center bg-[#F7F3E9]/30 text-emerald-700 font-bold">✓ Included</td>
+              <td class="p-4 text-center text-emerald-700 font-bold">✓ Included</td>
+              <td class="p-4 text-center text-emerald-700 font-bold">✓ Private Show</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-bold bg-[#F7F3E9]/50">Gourmet River Meals</td>
+              <td class="p-4 text-center">Breakfast + River Lunch</td>
+              <td class="p-4 text-center">All 6 Meals</td>
+              <td class="p-4 text-center bg-[#F7F3E9]/30 font-semibold">Curated Bengal Feast</td>
+              <td class="p-4 text-center">Continuous Deck Snacks</td>
+              <td class="p-4 text-center font-semibold">Custom Menu (Jain / Mild)</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-bold bg-[#F7F3E9]/50">Indicative Pricing</td>
+              <td class="p-4 text-center font-serif font-bold text-[#123B2A]">₹2,850</td>
+              <td class="p-4 text-center font-serif font-bold text-[#123B2A]">₹5,450</td>
+              <td class="p-4 text-center bg-[#F7F3E9]/30 font-serif font-bold text-[#0A211B] text-base">₹9,800</td>
+              <td class="p-4 text-center font-serif font-bold text-[#123B2A]">₹12,500</td>
+              <td class="p-4 text-center font-serif font-bold text-[#123B2A]">₹28,000 (Boat)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. INDICATIVE SEASONAL TIMING -->
+  <section class="py-20 px-6 lg:px-12 bg-[#F7F3E9]">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-[0.2em] text-[#426B50] block mb-2">Delta Calendar</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#0A211B] mb-4">
+          When to Experience the Sundarbans
+        </h2>
+        <p class="text-xs sm:text-sm text-[#202722]/80 leading-relaxed font-light">
+          Each season paints the world’s largest mangrove forest with distinct wildlife movements and moods.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Season 1 -->
+        <div class="bg-white p-6 rounded-xl border border-[#DCE6DF] card-hover-lift">
+          <span class="text-[10px] uppercase tracking-widest font-bold text-[#C8A66B] block mb-1">Peak Wildlife Window</span>
+          <h3 class="font-serif text-xl font-bold text-[#0A211B] mb-2">Winter: October – March</h3>
+          <p class="text-xs text-[#202722]/80 leading-relaxed mb-4">
+            Balmy daytime temperatures (15°C–25°C), crisp morning mist, and minimal rainfall. Prime season for estuarine crocodiles basking on low-tide mudflats, migratory raptors, and deer herds at sweet-water holes.
+          </p>
+          <span class="text-[11px] text-[#123B2A] font-bold block">Recommended for: First-time travelers, families, general birding</span>
+        </div>
+
+        <!-- Season 2 -->
+        <div class="bg-white p-6 rounded-xl border border-[#DCE6DF] card-hover-lift">
+          <span class="text-[10px] uppercase tracking-widest font-bold text-[#426B50] block mb-1">Dramatic Atmosphere</span>
+          <h3 class="font-serif text-xl font-bold text-[#0A211B] mb-2">Monsoon: July – September</h3>
+          <p class="text-xs text-[#202722]/80 leading-relaxed mb-4">
+            The rivers swell, the mangrove canopy turns into an electric neon green, and dramatic monsoon rain clouds sweep across vast estuarine horizons. High rainfall, comfortable vessel cabins, and intense sensory solitude.
+          </p>
+          <span class="text-[11px] text-[#123B2A] font-bold block">Recommended for: Nature poets, rain enthusiasts, landscape artists</span>
+        </div>
+
+        <!-- Season 3 -->
+        <div class="bg-white p-6 rounded-xl border border-[#DCE6DF] card-hover-lift">
+          <span class="text-[10px] uppercase tracking-widest font-bold text-[#C8A66B] block mb-1">Wild Harvest & Mudflats</span>
+          <h3 class="font-serif text-xl font-bold text-[#0A211B] mb-2">Summer: April – June</h3>
+          <p class="text-xs text-[#202722]/80 leading-relaxed mb-4">
+            Warmer days (28°C–36°C) coinciding with the traditional Mawali wild honey harvesting season. Animals congregate closely around interior sweet-water watchtower basins for hydration.
+          </p>
+          <span class="text-[11px] text-[#123B2A] font-bold block">Recommended for: Serious wildlife photographers, cultural ethnographers</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. BOOKING FLOW EXPLANATION -->
+  <section class="py-20 px-6 lg:px-12 bg-white border-b border-[#DCE6DF]">
+    <div class="max-w-5xl mx-auto">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-[0.2em] text-[#426B50] block mb-2">Streamlined Journey</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#0A211B] mb-4">
+          How to Reserve Your Expedition
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+        
+        <div class="text-center">
+          <div class="w-14 h-14 mx-auto rounded-full bg-[#123B2A] text-[#C8A66B] font-serif font-bold text-xl flex items-center justify-center mb-4">
+            1
+          </div>
+          <h3 class="font-serif text-lg font-bold text-[#0A211B] mb-2">Select & Inquire</h3>
+          <p class="text-xs text-[#202722]/80 leading-relaxed">
+            Choose your preferred itinerary. Connect via direct WhatsApp (+91 9564846891) or our online inquiry form with dates and guest count.
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-14 h-14 mx-auto rounded-full bg-[#123B2A] text-[#C8A66B] font-serif font-bold text-xl flex items-center justify-center mb-4">
+            2
+          </div>
+          <h3 class="font-serif text-lg font-bold text-[#0A211B] mb-2">Permit Verification</h3>
+          <p class="text-xs text-[#202722]/80 leading-relaxed">
+            Provide guest government photo IDs (Aadhaar / Voter ID / Passport for foreign nationals). We clear Forest Department clearances 48 hours prior.
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-14 h-14 mx-auto rounded-full bg-[#123B2A] text-[#C8A66B] font-serif font-bold text-xl flex items-center justify-center mb-4">
+            3
+          </div>
+          <h3 class="font-serif text-lg font-bold text-[#0A211B] mb-2">Confirmed Embarkation</h3>
+          <p class="text-xs text-[#202722]/80 leading-relaxed">
+            Meet your private chauffeur in Kolkata or arrive directly at Godkhali Ghat. Step aboard your sanitized vessel and cruise into the wild.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CUSTOM CHARTERS CTA -->
+  <section class="py-20 px-6 lg:px-12 bg-[#0A211B] text-white text-center">
+    <div class="max-w-4xl mx-auto">
+      <span class="text-xs uppercase tracking-[0.25em] text-[#C8A66B] font-bold block mb-3">Bespoke River Charters</span>
+      <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-6">
+        Need a Private Boat for Your Organization or Family?
+      </h2>
+      <p class="text-sm sm:text-base text-[#DCE6DF]/85 max-w-2xl mx-auto mb-8 font-light leading-relaxed">
+        We arrange complete vessel buy-outs for corporate leadership offsites, documentary filming crews, birding societies, and multi-generational family reunions with dedicated chefs and customized routing.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://wa.me/919564846891?text=Hello%20Sundarban%20Wild%20Escape%2C%20I%20would%20like%20to%20inquire%20about%20a%20Private%20Boat%20Charter." target="_blank" rel="noopener noreferrer" class="btn-gold py-3.5 px-8 rounded-full text-xs font-bold uppercase tracking-wider">
+          Inquire Private Charter on WhatsApp
+        </a>
+        <a href="contact.html" class="py-3.5 px-8 rounded-full border border-white/30 text-white hover:bg-white/10 text-xs font-bold uppercase tracking-wider transition-all">
+          Submit Detailed Requirements
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="bg-[#0A211B] text-white pt-20 pb-12 border-t border-[#DCE6DF]/15">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-16 border-b border-[#DCE6DF]/15">
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-3">
+            <img src="assets/images/logo.png" alt="Sundarban Wild Escape Logo" class="w-12 h-12 rounded-full object-cover border border-[#C8A66B]/50 shadow-md" />
+            <div>
+              <span class="font-serif text-xl sm:text-2xl font-bold tracking-wider text-white block leading-tight">SUNDARBAN WILD ESCAPE</span>
+              <span class="text-[10px] uppercase tracking-[0.2em] text-[#C8A66B] font-light block">Where the River Meets the Wild</span>
+            </div>
+          </div>
+          <p class="text-xs text-[#DCE6DF]/80 leading-relaxed max-w-sm mb-6">
+            Accredited luxury ecotourism operator dedicated exclusively to the Indian Sundarbans. Certified sustainable boat safaris, high-safety watchtower excursions, and authentic cultural stewardship.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-[#C8A66B] mb-4">Expeditions</h4>
+          <ul class="space-y-2 text-xs text-[#DCE6DF]/80">
+            <li><a href="packages.html?duration=day-trip" class="hover:text-white transition-colors">Day Delta Explorer</a></li>
+            <li><a href="packages.html?duration=2d1n" class="hover:text-white transition-colors">2D/1N Mangrove Classic</a></li>
+            <li><a href="packages.html?duration=3d2n" class="hover:text-white transition-colors">3D/2N Signature Sanctuary</a></li>
+            <li><a href="packages.html" class="hover:text-white transition-colors">Wildlife Photography Special</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-[#C8A66B] mb-4">Delta Discovery</h4>
+          <ul class="space-y-2 text-xs text-[#DCE6DF]/80">
+            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="blog.html" class="hover:text-white transition-colors">Field Chronicles & Blog</a></li>
+            <li><a href="gallery.html" class="hover:text-white transition-colors">Visual Expedition Archive</a></li>
+            <li><a href="contact.html#faqs" class="hover:text-white transition-colors">Permits & Seasonality FAQ</a></li>
+            <li><a href="terms.html" class="hover:text-white transition-colors">Forest Protocols</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-[#C8A66B] mb-4">Direct Contact</h4>
+          <ul class="space-y-3 text-xs text-[#DCE6DF]/80">
+            <li>
+              <span class="text-[#C8A66B] block font-semibold">Inquiries & Reservations:</span>
+              <a href="tel:+919564846891" class="hover:text-white font-mono text-sm block font-bold text-white">+91 9564846891</a>
+            </li>
+            <li>
+              <span class="text-[#C8A66B] block font-semibold">Primary Embarkation:</span>
+              <span>Godkhali Ghat, Canning, South 24 Parganas, West Bengal 743370</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-[11px] text-[#DCE6DF]/60 gap-4">
+        <div>&copy; <span class="current-year">2026</span> Sundarban Wild Escape. All rights reserved. Indian Sundarbans only.</div>
+        <div class="flex items-center space-x-6">
+          <a href="terms.html" class="hover:text-white transition-colors">Terms of Ecotourism</a>
+          <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="contact.html" class="hover:text-white transition-colors">Godkhali Route Map</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a id="whatsappFloat" href="https://wa.me/919564846891?text=Hello%20Sundarban%20Wild%20Escape%2C%20I%20would%20like%20to%20inquire%20about%20your%20packages." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-40 bg-[#25D366] text-white p-3.5 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 flex items-center justify-center whatsapp-pulse" title="Chat on WhatsApp" aria-label="Direct WhatsApp Contact">
+    <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <!-- Modular Scripts -->
+  <script src="js/main.js"></script>
+  <script type="module" src="js/packages.js"></script>
+</body>
+</html>
+
